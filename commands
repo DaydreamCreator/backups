@@ -1,11 +1,37 @@
-ls: 
+ls
   lists all files in the current directory
   
-cd <path to directory>: 
+cd <path to directory> 
   change into the specified directory
   
-mkdir <directory name>: 
+mkdir <directory name>
   make a new directory with the given name
   
-mv <source path> <destination path>:
+mv <source path> <destination path>
   move the file at the given source to the given destination
+
+
+>>>>>> PYTHON
+
+python3(python/py for windows) -i <xx.py>
+  opens an interactive session
+  该-i选项运行您的 Python 脚本，然后打开交互式会话。在交互式会话中，您逐行运行 Python 代码并获得即时反馈，而不是一次运行整个文件。
+  要退出，请exit()在解释器提示符中键入。Ctrl-D您还可以在 Linux/Mac 计算机或Windows 上使用键盘快捷键Ctrl-Z Enter。
+  如果您在交互式运行 Python 文件时对其进行编辑，则需要退出并重新启动解释器才能使这些更改生效。
+
+python3 -m doctest <xx.py>
+  Runs doctests in a particular file.
+  Doctests are surrounded by triple quotes (""") within functions.Each test in the file consists of >>> followed by some Python code and 
+     the expected output (though the >>> are not seen in the output of the doctest command).
+----->
+def twenty_twenty_one():
+    """Come up with the most creative expression that evaluates to 2021,
+    using only numbers and the +, *, and - operators.
+
+    >>> twenty_twenty_one()
+    2021
+    """
+    
+    return 2020+1
+<-----
+source: https://inst.eecs.berkeley.edu/~cs61a/fa21/lab/lab00/
