@@ -31,7 +31,10 @@ def twenty_twenty_one():
     >>> twenty_twenty_one()
     2021
     """
-    
     return 2020+1
+    
+if __name__ == "__main__":    # use it to launch doctest
+    import doctest
+    doctest.testmod()
 <-----
 source: https://inst.eecs.berkeley.edu/~cs61a/fa21/lab/lab00/
